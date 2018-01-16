@@ -1,0 +1,25 @@
+Book b; 
+b = new Book(); 
+
+
+public class Book{
+ 
+    public String name;
+    public String author;
+    public int year;
+     
+   
+    {
+        name = "";
+        author = "";
+        year = 0;
+    }
+   
+     
+    Book(String name, String author, int year){
+         
+        this.name = name;
+        this.author = author;
+        this.year = year;
+    }   
+}

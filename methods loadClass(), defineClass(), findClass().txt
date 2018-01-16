@@ -1,0 +1,35 @@
+public class Test extends ClassLoader {
+    Test() {
+        super(ClassLoader.getSystemClassLoader());
+    }
+
+    public static void main(String[] args) throws ClassNotFoundException,
+            IOException, InstantiationException, IllegalAccessException,
+            NoSuchMethodException, SecurityException, IllegalArgumentException,
+            InvocationTargetException {
+        new Test().run();
+    }
+
+    void run() throws IOException, InstantiationException,
+            IllegalAccessException, NoSuchMethodException, SecurityException,
+            IllegalArgumentException, InvocationTargetException,
+            ClassNotFoundException {
+        FileInputStream fis = new FileInputStream("monsters_pk.class");
+        int l = fis.available();
+        byte[] buf = new byte[l];
+        fis.read(buf);
+
+        Class c = defineClass("monsters_pk", buf, 0, l);
+
+        System.err.println(Arrays.deepToString(c.getMethods()));
+
+        Method m = c.getMethod("main", String[].class);
+        m.invoke(null, new String[] {null});
+        
+        boolean[] t = new boolean[5];
+        Class tc = t.getClass().getComponentType();
+        Array a;
+        a.
+        System.out.println(tc.getName());
+    }
+}

@@ -1,0 +1,31 @@
+public class className {
+   
+}
+private boolean myFlag;
+static final double weeks = 9.5;
+protected static final int BOXWIDTH = 42;
+public static void main(String[] arguments) {
+  
+}
+
+
+public class Logger {
+   private String format;
+   public String getFormat() {
+      return this.format;
+   }
+   public void setFormat(String format) {
+      this.format = format;
+   }
+}
+
+class AudioPlayer {
+   protected boolean openSpeaker(Speaker sp) {
+      
+   }
+
+class StreamingAudioPlayer {
+   boolean openSpeaker(Speaker sp) {
+      
+   }
+}

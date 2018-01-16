@@ -1,0 +1,7 @@
+Class animalClass = Class.forName("org.dmitrievs.Cat") ;
+myAnimal = (Cat) animalClass.newInstance(); 
+
+
+ClassLoader classLoader = MainClass.class.getClassLoader();
+Class aClass = classLoader.loadClass("com.jenkov.MyClass");
+myClass = (MyClass) aClass.newInstance();

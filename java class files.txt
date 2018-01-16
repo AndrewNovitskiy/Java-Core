@@ -1,0 +1,18 @@
+//Multiple.java
+//preceding package and import statements
+
+class MyClass{...}
+interface Service{...}
+...
+//No public classes or interfaces
+...
+
+
+
+//Test.java
+//named exactly as the public class Test
+public class Test{...}
+//!public class Operations{...}
+interface Selector{...}
+...
+//Other non-public classes/interfaces
